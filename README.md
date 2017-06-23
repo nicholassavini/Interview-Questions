@@ -8,7 +8,7 @@ A.
 Q. **Tell me about a web application you have built. Why did you choose to build it? What did you learn? What challenges did you face and how did you overcome them?**
 A.
 
-Q. **Write a function in Python that takes a list of strings and returns a single string that is an HTML unordered list (<ul>...</ul>) of those strings. You should include a brief explanation of your code. Then, what would you have to consider if the original list was provided by user input?**
+Q. **Write a function in Python that takes a list of strings and returns a single string that is an HTML unordered list of those strings. You should include a brief explanation of your code. Then, what would you have to consider if the original list was provided by user input?**
 A.
 
 Q. **List 2-3 attacks that web applications are vulnerable to. How do these attacks work? How can we prevent those attacks?**
