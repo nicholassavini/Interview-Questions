@@ -4,7 +4,7 @@ This repository will hold my answers to the practice interview questions that ar
 ## Questions
 Q. **What is the most influential book or blog post you’ve read regarding web development?**
 
-A.
+A. I recently came across [this article](https://axesslab.com/accessibility-according-to-pwd/) through a post on Reddit. Having lived with ADHD for the bulk of my life, and having met a number of member of the deaf community, I had previously been aware of some of the concerns people had listed. However, reading through this article, I felt a combination of shame and surprise at how much I had not previously considered. This lead me to start thinking about all these situations and how to make the web more accessible. It has inspired me to go back to older projects I've made, and experiment with different ways to circumvent these issues, and create a personal toolkit for future use.
 
 Q. **Tell me about a web application you have built. Why did you choose to build it? What did you learn? What challenges did you face and how did you overcome them?**
 
