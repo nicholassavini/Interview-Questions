@@ -26,7 +26,7 @@ A third type of attack is referred to as a CRSF attack. A CRSF attack involves s
 
 Q. **Here is some starter code for a Flask Web Application. Expand on that and include a route that simulates rolling two dice and returns the result in JSON. You should include a brief explanation of your code.**
 
-A.
+A. The `/dice` route starts by creating the dictionary `data` that will eventually hold the JSON results in the list created as the value to the 'rolls' key. The for loop that follows then appends a dictionary to to the aforementioned list, holding the value of a random die roll, over each iteration. After the loop is completed, an instance of Flask's `Response` object is created, creating a response that actually creates the JSON data, and sending the proper headers over to the browser. If the headers were not specified, the browser would just interpret the JSON dump as plain text, instead of JSON data. The response is then returned and displayed in the browser. The entire route was designed so that if additional dice rolls were to be implemented, they could be easily added, and could even be taken as user input.
 
 Q. **If you were to start your full-stack developer position today, what would be your goals a year from now?**
 
