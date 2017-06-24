@@ -15,8 +15,7 @@ def roll_dice():
         data['rolls'].append({
             'roll_' + str(i) : int(random.randint(1,6))
         })
-    with open('data.txt', 'w') as file:
-        json.dump(data, file)
+    return json.dumps(data)
 
 if __name__ == '__main__':
  app.debug = True
