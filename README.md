@@ -30,4 +30,4 @@ A. The `/dice` route starts by creating the dictionary `data` that will eventual
 
 Q. **If you were to start your full-stack developer position today, what would be your goals a year from now?**
 
-A.
+A. Over the next year, I would like to set my attention to is machine learning. As someone who has always enjoyed working with data, I find the prospect of creating something that can be taught based on large amounts of data intriguing. Projects like Nest's line of intelligent thermostats and Google's self-driving car are particularly interesting, because I believe they are examples of what will be the most relevant modern-day technology, and I would love to see what kind of doors that opens.
