@@ -16,7 +16,11 @@ A. The code for this answer can be found in the `question_2.py` file. The file c
 
 Q. **List 2-3 attacks that web applications are vulnerable to. How do these attacks work? How can we prevent those attacks?**
 
-A.
+A. One type of attack would be a SQL Injection Attack. In such an attack, someone would usually enter a string into a form input, or as part of a URL that might resemble `Robert'); DROP TABLE Students;--` (the infamous [Little Bobby Tables example](https://xkcd.com/327/)). In this particular instance, if the application had a table called `Students`, it could be potentially be deleted, and all data located within it would be lost. To prevent such an attack, you can use a library to santize the inputs on your site, preventing any unauthorized SQL from being passed and executed. If you are writing your app in Python, Bleach is one such library.
+
+Another type of attack is called an XSS attack. An XSS attack occurs when someone injects a malicious script into a site that would otherwise contain no malware. The most common way that this would happen is similar to the SQL Injection Attack, where the attacker may enter some malicious information into an input on the site. This could be a script or a link to a script. With the script in place, the previously safe website can now server that harmful script to users of the site, and it can do a variety of things, which include stealing session cookies, making unauthorized AJAX requests, or gather information about the user, which might include their location. The same steps as above can be taken to prevent an XSS attack, as well as santizing markup on a page, especially information located within `<script>` tags. Bleach can also be used to handle this.
+
+A third type of attack is referred to as a CRSF attack. A CRSF attack involves someone redirecting an action executed by a website where you are currently authenticated. An attacker could redirect a deposit into your bank account, to another bank account, or redirect the contents of an email to another server. Protecting from a CRSF attack would involve using a randomly generated secret key for authenticating users with cookies. Some libraries have built in methods for CRSF protection, the Flask-WTF library for Flask being one of them.
 
 Q. **Here is some starter code for a Flask Web Application. Expand on that and include a route that simulates rolling two dice and returns the result in JSON. You should include a brief explanation of your code.**
 
