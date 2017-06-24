@@ -11,12 +11,10 @@ def hello_world():
 @app.route('/dice', methods=['GET'])
 def roll_dice():
     data = {'rolls':[]}
-    data['rolls'].append({
-        'first_die' : int(random.randint(1,6))
-    })
-    data['rolls'].append({
-        'second_die' : int(random.randint(1,6))
-    })
+    for i in range(1, 3):
+        data['rolls'].append({
+            'roll_' + str(i) : int(random.randint(1,6))
+        })
     with open('data.txt', 'w') as file:
         json.dump(data, file)
 
